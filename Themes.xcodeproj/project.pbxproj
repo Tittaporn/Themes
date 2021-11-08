@@ -16,6 +16,8 @@
 		16A4F5E327389D98007A9894 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A4F5E227389D98007A9894 /* Theme.swift */; };
 		16A4F5E627389F6C007A9894 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A4F5E527389F6C007A9894 /* Colors.xcassets */; };
 		16A4F5E92738A765007A9894 /* AnotherThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A4F5E82738A765007A9894 /* AnotherThemeViewController.swift */; };
+		16A4F5EC2738ACDA007A9894 /* Apple.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A4F5EB2738ACDA007A9894 /* Apple.xcassets */; };
+		16A4F5EF2738ACFB007A9894 /* Android.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A4F5EE2738ACFB007A9894 /* Android.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		16A4F5E227389D98007A9894 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		16A4F5E527389F6C007A9894 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		16A4F5E82738A765007A9894 /* AnotherThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherThemeViewController.swift; sourceTree = "<group>"; };
+		16A4F5EB2738ACDA007A9894 /* Apple.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Apple.xcassets; sourceTree = "<group>"; };
+		16A4F5EE2738ACFB007A9894 /* Android.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Android.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				16A4F5E227389D98007A9894 /* Theme.swift */,
 				16A4F5E527389F6C007A9894 /* Colors.xcassets */,
 				16A4F5E82738A765007A9894 /* AnotherThemeViewController.swift */,
+				16A4F5EB2738ACDA007A9894 /* Apple.xcassets */,
+				16A4F5EE2738ACFB007A9894 /* Android.xcassets */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 				16A4F5E627389F6C007A9894 /* Colors.xcassets in Resources */,
 				16A4F5D727389D61007A9894 /* Assets.xcassets in Resources */,
 				16A4F5D527389D5C007A9894 /* Main.storyboard in Resources */,
+				16A4F5EC2738ACDA007A9894 /* Apple.xcassets in Resources */,
+				16A4F5EF2738ACFB007A9894 /* Android.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,9 +17,14 @@ protocol ThemeProtocol {
     var background: UIColor { get }
     var tint: UIColor { get }
     var logo: UIImage { get }
+    var imageSet: [UIImage] { get }
 }
 
 class LightTheme: ThemeProtocol {
+    var imageSet: [UIImage] = [UIImage(named: "apple0") ?? UIImage(),
+                               UIImage(named: "apple1") ?? UIImage(),
+                               UIImage(named: "apple2") ?? UIImage(),
+                               UIImage(named: "apple3") ?? UIImage()]
     var logo: UIImage = UIImage(named: "apple") ?? UIImage()
     var mainFontName = "FugazOne-Regular"
     var accent = UIColor(named: "accent")!
@@ -29,6 +34,10 @@ class LightTheme: ThemeProtocol {
 }
 
 class DarkTheme: ThemeProtocol {
+    var imageSet: [UIImage] = [UIImage(named: "android0") ?? UIImage(),
+                               UIImage(named: "android1") ?? UIImage(),
+                               UIImage(named: "android2") ?? UIImage(),
+                               UIImage(named: "android3") ?? UIImage()]
     var logo: UIImage = UIImage(named: "android") ?? UIImage()
     var mainFontName = "FugazOne-Regular"
     var accent = UIColor(named: "background")!

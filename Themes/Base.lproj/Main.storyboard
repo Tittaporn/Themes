@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jyW-Zy-xb7">
-                                <rect key="frame" x="40" y="149" width="334" height="573"/>
+                                <rect key="frame" x="40" y="149" width="334" height="353"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST THEME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIG-Uc-LmH" customClass="CustomLabel" customModule="Themes" customModuleProvider="target">
                                 <rect key="frame" x="20" y="108" width="374" height="21"/>
@@ -35,24 +35,34 @@
                                     <segue destination="cP2-lc-E2I" kind="show" id="uOe-yE-Zb2"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WwM-to-7Vs">
+                                <rect key="frame" x="20" y="522" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1UM-Yf-Lwu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="WwM-to-7Vs" firstAttribute="top" secondItem="jyW-Zy-xb7" secondAttribute="bottom" constant="20" id="2gc-M4-KrQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XdC-3g-4Qb" secondAttribute="bottom" constant="20" id="32g-gt-23E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WwM-to-7Vs" secondAttribute="trailing" constant="20" id="8AT-BG-Wj2"/>
                             <constraint firstItem="CIG-Uc-LmH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Crw-yb-iVk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XdC-3g-4Qb" secondAttribute="trailing" constant="20" id="J1d-06-HeM"/>
+                            <constraint firstItem="WwM-to-7Vs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JOQ-xy-Evo"/>
                             <constraint firstItem="jyW-Zy-xb7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="K5k-qM-lET"/>
                             <constraint firstItem="CIG-Uc-LmH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Sn9-88-969"/>
                             <constraint firstItem="jyW-Zy-xb7" firstAttribute="top" secondItem="CIG-Uc-LmH" secondAttribute="bottom" constant="20" id="Ur6-Oh-aQ0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jyW-Zy-xb7" secondAttribute="trailing" constant="40" id="YqR-Ek-Lch"/>
+                            <constraint firstItem="XdC-3g-4Qb" firstAttribute="top" secondItem="WwM-to-7Vs" secondAttribute="bottom" constant="20" id="brj-t7-g4f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CIG-Uc-LmH" secondAttribute="trailing" constant="20" id="e3U-s5-Z9Z"/>
-                            <constraint firstItem="XdC-3g-4Qb" firstAttribute="top" secondItem="jyW-Zy-xb7" secondAttribute="bottom" constant="20" id="qwv-Qr-RGV"/>
                             <constraint firstItem="XdC-3g-4Qb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sOo-EZ-p4o"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="g5Z-AI-ebF"/>
                     <connections>
+                        <outlet property="imgSet" destination="WwM-to-7Vs" id="Mbp-kz-FHn"/>
                         <outlet property="imgTheme" destination="jyW-Zy-xb7" id="FNw-OH-ayp"/>
                     </connections>
                 </viewController>
@@ -69,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NA4-Ih-gHI">
-                                <rect key="frame" x="40" y="149" width="334" height="573"/>
+                                <rect key="frame" x="40" y="149" width="334" height="353"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST THEME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64E-ox-IPV" customClass="CustomLabel" customModule="Themes" customModuleProvider="target">
                                 <rect key="frame" x="20" y="108" width="374" height="21"/>
@@ -84,6 +94,12 @@
                                 </constraints>
                                 <state key="normal" title="BUTTON  THEME"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ebr-hG-CR5">
+                                <rect key="frame" x="20" y="522" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="XzP-hG-YPw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KKc-Tr-ixA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -92,16 +108,21 @@
                             <constraint firstItem="NA4-Ih-gHI" firstAttribute="top" secondItem="64E-ox-IPV" secondAttribute="bottom" constant="20" id="7YB-ge-iqc"/>
                             <constraint firstItem="64E-ox-IPV" firstAttribute="leading" secondItem="KKc-Tr-ixA" secondAttribute="leading" constant="20" id="Ci4-uw-iPz"/>
                             <constraint firstItem="KKc-Tr-ixA" firstAttribute="trailing" secondItem="NA4-Ih-gHI" secondAttribute="trailing" constant="40" id="IFp-jy-i36"/>
-                            <constraint firstItem="jje-f7-QZC" firstAttribute="top" secondItem="NA4-Ih-gHI" secondAttribute="bottom" constant="20" id="V1J-1h-FuC"/>
+                            <constraint firstItem="KKc-Tr-ixA" firstAttribute="trailing" secondItem="Ebr-hG-CR5" secondAttribute="trailing" constant="20" id="N5S-9o-AyL"/>
                             <constraint firstItem="KKc-Tr-ixA" firstAttribute="trailing" secondItem="jje-f7-QZC" secondAttribute="trailing" constant="20" id="WmE-UM-1VY"/>
+                            <constraint firstItem="KKc-Tr-ixA" firstAttribute="bottom" secondItem="jje-f7-QZC" secondAttribute="bottom" constant="20" id="ZLA-Kp-vyt"/>
                             <constraint firstItem="KKc-Tr-ixA" firstAttribute="bottom" secondItem="jje-f7-QZC" secondAttribute="bottom" constant="20" id="bbB-vx-KGb"/>
                             <constraint firstItem="KKc-Tr-ixA" firstAttribute="trailing" secondItem="64E-ox-IPV" secondAttribute="trailing" constant="20" id="jhU-D4-drl"/>
+                            <constraint firstItem="Ebr-hG-CR5" firstAttribute="leading" secondItem="KKc-Tr-ixA" secondAttribute="leading" constant="20" id="lba-jg-dZ1"/>
+                            <constraint firstItem="Ebr-hG-CR5" firstAttribute="top" secondItem="NA4-Ih-gHI" secondAttribute="bottom" constant="20" id="mGX-SW-xPK"/>
+                            <constraint firstItem="jje-f7-QZC" firstAttribute="top" secondItem="Ebr-hG-CR5" secondAttribute="bottom" constant="20" id="mJY-O1-VMu"/>
                             <constraint firstItem="64E-ox-IPV" firstAttribute="top" secondItem="KKc-Tr-ixA" secondAttribute="top" constant="20" id="wJJ-yh-qbd"/>
                             <constraint firstItem="NA4-Ih-gHI" firstAttribute="leading" secondItem="KKc-Tr-ixA" secondAttribute="leading" constant="40" id="xl9-MT-hHb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HdM-Uz-oG7"/>
                     <connections>
+                        <outlet property="imgSet" destination="Ebr-hG-CR5" id="sSh-gy-gQP"/>
                         <outlet property="imgTheme" destination="NA4-Ih-gHI" id="gWO-d3-xm2"/>
                     </connections>
                 </viewController>
